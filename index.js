@@ -33,7 +33,7 @@ async function init() {
             .replace ('/></', ` fill = "${answers.color}"/></`)
             .replace ( '</svg>', `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="white">${answers.characters}</text></svg>`)
             fs.writeFile('./examples/logo.svg', svg, (err) => {
-                err ? console.error(err) : console.log('SVG created!');
+                err ? console.error(err) : console.log('Generated logo.svg');
             });
         });
 }
