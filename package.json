@@ -2,5 +2,27 @@
   "dependencies": {
     "inquirer": "^9.1.5",
     "jest": "^29.5.0"
-  }
+  },
+  "name": "svg-logo-maker",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaylaNorris/svg-logo-maker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaylaNorris/svg-logo-maker/issues"
+  },
+  "homepage": "https://github.com/KaylaNorris/svg-logo-maker#readme"
 }
