@@ -13,10 +13,9 @@ async function init() {
                 name: 'characters',
             },
             {
-                type: 'list',
-                message: 'Pick your color from the list',
-                choices: ['red', 'orange', 'yellow', 'green', 'blue', 'purple'],
-                name: 'color',
+                type: 'input',
+                message: 'Enter the text color of your choice:',
+                name: 'textColor',
             },
             {
                 type: 'list',
@@ -24,14 +23,19 @@ async function init() {
                 choices: ['circle', 'triangle', 'square'],
                 name: 'shape',
             },
+            {
+                type: 'input',
+                message: 'Enter the shape color of your choice:',
+                name: 'shapeColor',
+            },
         ])
 
         // Function to create logo
 
         .then((answers) => {
             const svg = shapes[answers.shape]
-            .replace ('/></', ` fill = "${answers.color}"/></`)
-            .replace ( '</svg>', `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="white">${answers.characters}</text></svg>`)
+            .replace ('/></', ` fill = "${answers.shapeColor}"/></`)
+            .replace ( '</svg>', `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="${answers.textColor}">${answers.characters}</text></svg>`)
             fs.writeFile('./examples/logo.svg', svg, (err) => {
                 err ? console.error(err) : console.log('Generated logo.svg');
             });
