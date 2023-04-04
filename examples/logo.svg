@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><g><polygon points="100,10 40,190 190,190"  fill = "blue"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="white">KEN</text></svg></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><g><circle cx="100" cy="100" r="100"  fill = "purple"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="white">KEN</text></svg></g>
